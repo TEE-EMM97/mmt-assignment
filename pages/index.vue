@@ -35,7 +35,7 @@
     <v-btn class="mr-4" @click.prevent="addMember">
       submit
     </v-btn>
-    <v-btn @click="clear;changeRoute(member.id)">
+    <v-btn @click="clear">
       clear
     </v-btn>
 
