@@ -29,7 +29,7 @@ export const mutations = {
 }
 
 export const getters = {
-  getUserById: (state) => {
-    return state.members.find(member => member.id === '1')
+  users (state) {
+    return state.members
   }
 }

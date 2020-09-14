@@ -38,6 +38,10 @@
     <v-btn @click="clear">
       clear
     </v-btn>
+    <br>
+    <NuxtLink to="/thank-you">
+      About
+    </NuxtLink>
 
     <v-simple-table fixed-header>
       <template v-slot:default>
@@ -95,6 +99,10 @@ export default {
     }
   },
 
+  fetch ({ store }) {
+    store.commit('addMember')
+  },
+
   data () {
     return {
       name: '',
@@ -138,6 +146,7 @@ export default {
       }
       if (!this.$v.$invalid) {
         this.addUser(user)
+        this.$store.commit('addMember')
       }
       console.log(`${this.name}`)
     },
