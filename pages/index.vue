@@ -32,18 +32,17 @@
       @blur="$v.remainAnon.$touch()"
     />
 
-    <v-btn class="mr-4" @click.prevent="addMember">
+    <v-btn class="btn-row" @click.prevent="addMember">
       submit
     </v-btn>
-    <v-btn @click="clear">
+    <v-btn class="btn-row" @click="clear">
       clear
     </v-btn>
-    <br>
-    <NuxtLink to="/thank-you">
-      About
-    </NuxtLink>
+    <!--NuxtLink to="/thank-you">
+      Thank you
+    </NuxtLink-->
 
-    <v-simple-table fixed-header>
+    <v-simple-table fixed-header class="summary">
       <template v-slot:default>
         <thead>
           <tr>
@@ -151,9 +150,9 @@ export default {
       console.log(`${this.name}`)
     },
 
-    changeRoute (id) {
+    /* changeRoute (id) {
       this.$route.push('/thank-you')
-    },
+    }, */
 
     clear () {
       this.$v.$reset()
@@ -165,3 +164,13 @@ export default {
   }
 }
 </script>
+
+<style>
+  .summary {
+    margin-top:100px;
+  }
+
+  .v-messages__message {
+    color: #e74c3c;
+  }
+</style>
