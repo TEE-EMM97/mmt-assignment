@@ -1,6 +1,38 @@
-# mmt-assignment
+## MMT-Assignment
 
-## Build Setup
+#### **Checklist:**
+
+- [x] Firefox Compliant
+
+- [x] Safari Webkit
+
+- [x] Chrome Compliant
+
+- [x] Responsive
+
+- [ ] ES2015
+
+- [x] Sass/SCSS
+
+- [x] Vuex
+
+- [ ] Axios
+
+- [ ] 3 Components in scope:
+
+  - Header
+
+  - Footer
+
+  - Index
+
+    - Form Inputs
+    - Form Content
+
+    
+
+
+### Build Setup
 
 ```bash
 # install dependencies
